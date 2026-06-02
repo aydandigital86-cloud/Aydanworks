@@ -204,11 +204,63 @@ left:0;
 font-size:2rem;
 }
 
+
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.cert-card{
+background:#16213e;
+padding:25px;
+border-radius:15px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.cert-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(0,255,255,.4);
+}
+
+.modal{
+display:none;
+position:fixed;
+z-index:9999;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.95);
+justify-content:center;
+align-items:center;
+}
+
+.modal img{
+max-width:90%;
+max-height:90%;
+border-radius:15px;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:30px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
 }
 
 </style>
 </head>
-
+    
 <body>
 
 <header>
@@ -326,25 +378,35 @@ LinkedIn
 
 </section>
 
-<section>
+<section id="certificates">
 
 <h2 class="title">Sertifikasi</h2>
 
-<div class="certs">
+<div class="cert-grid">
 
-<div class="cert">Google AI Essentials</div>
+<div class="cert-card" onclick="openCert('img/google-cybersecurity.jpg')">
+🔐 Google Cybersecurity
+</div>
 
-<div class="cert">Foundations of Cybersecurity</div>
+<div class="cert-card" onclick="openCert('img/google-ai.jpg')">
+🤖 Google AI Essentials
+</div>
 
-<div class="cert">Linux & SQL</div>
+<div class="cert-card" onclick="openCert('img/dta-computer.jpg')">
+💻 Computer Operator Technician
+</div>
 
-<div class="cert">Digital Talent Academy</div>
+<div class="cert-card" onclick="openCert('img/dta-network.jpg')">
+🌐 Associate Network Administrator
+</div>
 
-<div class="cert">Associate Network Administrator</div>
+<div class="cert-card" onclick="openCert('img/alibaba-security.jpg')">
+☁️ Alibaba Cloud Security
+</div>
 
-<div class="cert">Mikrotik MTCNA</div>
-
-<div class="cert">Telkom Certified Customer Care Associate</div>
+<div class="cert-card" onclick="openCert('img/telkom-certified.jpg')">
+📞 Telkom Certified Customer Care
+</div>
 
 </div>
 
@@ -369,6 +431,37 @@ LinkedIn Profile
 <p>© 2026 Daniel Sigalingging</p>
 
 </footer>
+<div id="certModal" class="modal">
 
+<span class="close-btn" onclick="closeCert()">
+&times;
+</span>
+
+<img id="certImage">
+
+</div>
+
+<script>
+
+function openCert(img){
+document.getElementById("certModal").style.display="flex";
+document.getElementById("certImage").src=img;
+}
+
+function closeCert(){
+document.getElementById("certModal").style.display="none";
+}
+
+window.onclick=function(event){
+let modal=document.getElementById("certModal");
+
+if(event.target===modal){
+modal.style.display="none";
+}
+}
+
+</script>
+
+    
 </body>
 </html>
