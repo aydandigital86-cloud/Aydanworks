@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniel Sigalingging | IT Infrastructure Specialist</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+html{scroll-behavior:smooth}
+body{background:#0f172a;color:#fff;overflow-x:hidden}
+section{padding:90px 8%}
+.title{text-align:center;font-size:2rem;margin-bottom:50px}
+.hero{
+min-height:100vh;display:flex;align-items:center;justify-content:center;
+text-align:center;position:relative;overflow:hidden;
+background:#0f172a;
+}
+.hero:before{
+content:'';position:absolute;inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(56,189,248,.12),transparent 25%),
+radial-gradient(circle at 80% 80%,rgba(56,189,248,.08),transparent 25%);
+}
+.grid{
+position:absolute;inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+background-size:40px 40px;
+}
+.node{
+position:absolute;width:8px;height:8px;border-radius:50%;
+background:#38bdf8;box-shadow:0 0 15px #38bdf8;
+animation:pulse 3s infinite;
+}
+.n1{top:18%;left:15%}.n2{top:30%;right:18%}
+.n3{bottom:25%;left:22%}.n4{bottom:18%;right:15%}.n5{top:50%;left:50%}
+@keyframes pulse{50%{transform:scale(1.8)}}
+.hero-content{max-width:900px;padding:20px;position:relative;z-index:2}
+.badge{
+display:inline-block;padding:10px 18px;border-radius:30px;
+border:1px solid rgba(56,189,248,.3);
+background:rgba(56,189,248,.08);color:#38bdf8;margin-bottom:25px
+}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);margin:10px 0}
+.hero h2{color:#38bdf8;font-size:clamp(1.2rem,3vw,2rem);margin-bottom:15px}
+.hero p{max-width:750px;margin:auto;line-height:1.8;opacity:.9}
+.btns{margin-top:30px}
+.btn{
+display:inline-block;padding:14px 28px;margin:8px;border-radius:50px;
+text-decoration:none;font-weight:600;transition:.3s
+}
+.btn-primary{background:#38bdf8;color:#000}
+.btn-outline{border:2px solid #38bdf8;color:#38bdf8}
+.btn:hover{transform:translateY(-3px)}
+.about{
+display:grid;grid-template-columns:280px 1fr;gap:40px;align-items:center
+}
+.about img{
+width:260px;height:260px;border-radius:50%;object-fit:cover;
+border:4px solid #38bdf8;box-shadow:0 0 30px rgba(56,189,248,.4)
+}
+.cards{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px
+}
+.card{
+background:#1e293b;padding:25px;border-radius:18px;
+border:1px solid rgba(56,189,248,.15);
+transition:.3s
+}
+.card:hover{transform:translateY(-6px);border-color:#38bdf8}
+.card h3{margin:10px 0;color:#38bdf8}
+.stack{
+display:flex;flex-wrap:wrap;gap:12px;justify-content:center
+}
+.stack span{
+background:#1e293b;padding:12px 18px;border-radius:50px;
+border:1px solid rgba(56,189,248,.2)
+}
+.cert-grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px
+}
+.cert-card{
+background:#1e293b;border-radius:18px;overflow:hidden;
+cursor:pointer;transition:.3s;text-align:center
+}
+.cert-card:hover{transform:translateY(-6px)}
+.cert-card img{width:100%;height:180px;object-fit:cover}
+.cert-card h4{padding:15px}
+.contact-grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px
+}
+.contact-card{background:#1e293b;padding:25px;border-radius:18px;text-align:center}
+footer{padding:30px;text-align:center;background:#020617}
+.modal{
+display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);
+justify-content:center;align-items:center;z-index:9999
+}
+.modal img{max-width:90%;max-height:90%}
+.close{position:absolute;top:20px;right:30px;font-size:40px;cursor:pointer}
+@media(max-width:768px){
+.about{grid-template-columns:1fr;text-align:center}
+.about img{margin:auto;width:220px;height:220px}
+section{padding:70px 6%}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="grid"></div>
+<div class="node n1"></div><div class="node n2"></div>
+<div class="node n3"></div><div class="node n4"></div><div class="node n5"></div>
+
+<div class="hero-content">
+<div class="badge">Technology Solutions for Business & Mining Operations</div>
+<h1>Daniel Sigalingging</h1>
+<h2>IT Infrastructure Specialist</h2>
+<p>Building Reliable, Secure, and Scalable IT Infrastructure for Business and Mining Operations.</p>
+
+<div class="btns">
+<a class="btn btn-primary" href="https://wa.me/6285277831186">Hubungi Saya</a>
+<a class="btn btn-outline" href="https://linkedin.com/in/daniel-sapuleka">LinkedIn</a>
+</div>
+</div>
+</header>
+
+<section>
+<h2 class="title">About Me</h2>
+<div class="about">
+<img src="foto.jpg" alt="Daniel">
+<div>
+<h3>Daniel Sigalingging</h3><br>
+<p>Profesional IT dengan pengalaman dalam Network Infrastructure, Cybersecurity, Cloud Computing, Linux Administration, Database Management, CCTV System, dan Mining Operations Support.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Core Expertise</h2>
+<div class="cards">
+<div class="card"><h3>🌐 Network Infrastructure</h3><p>Enterprise Network Design & Administration.</p></div>
+<div class="card"><h3>🔐 Cybersecurity</h3><p>System Security, Hardening & Monitoring.</p></div>
+<div class="card"><h3>☁️ Cloud Solutions</h3><p>Cloud Services & Hybrid Infrastructure.</p></div>
+<div class="card"><h3>⛏️ Mining IT Support</h3><p>Operational Technology Support for Mining Environment.</p></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Technology Stack</h2>
+<div class="stack">
+<span>Mikrotik</span><span>Linux</span><span>Ubuntu</span><span>Windows Server</span>
+<span>SQL Database</span><span>Cloudflare</span><span>VPN</span>
+<span>Google Workspace</span><span>CCTV</span><span>Cybersecurity</span>
+</div>
+</section>
+
+<section>
+<h2 class="title">Featured Certifications</h2>
+<div class="cert-grid">
+<div class="cert-card" onclick="openCert('img/google-cybersecurity.jpg')"><img src="img/google-cybersecurity.jpg"><h4>Google Cybersecurity</h4></div>
+<div class="cert-card" onclick="openCert('img/google-ai.jpg')"><img src="img/google-ai.jpg"><h4>Google AI Essentials</h4></div>
+<div class="cert-card" onclick="openCert('img/alibaba-security.jpg')"><img src="img/alibaba-security.jpg"><h4>Alibaba Cloud Security</h4></div>
+<div class="cert-card" onclick="openCert('img/dta-network.jpg')"><img src="img/dta-network.jpg"><h4>Associate Network Administrator</h4></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Let's Connect</h2>
+<div class="contact-grid">
+<div class="contact-card"><h3>WhatsApp</h3><p>085277831186</p></div>
+<div class="contact-card"><h3>Email</h3><p>daniel.code86@gmail.com</p></div>
+<div class="contact-card"><h3>LinkedIn</h3><p>linkedin.com/in/daniel-sapuleka</p></div>
+</div>
+</section>
+
+<footer>© 2026 Daniel Sigalingging</footer>
+
+<div id="certModal" class="modal">
+<span class="close" onclick="closeCert()">×</span>
+<img id="certImage">
+</div>
+
+<script>
+function openCert(img){
+document.getElementById('certModal').style.display='flex';
+document.getElementById('certImage').src=img;
+}
+function closeCert(){
+document.getElementById('certModal').style.display='none';
+}
+</script>
+</body>
+</html>
