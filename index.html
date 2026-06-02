@@ -1254,5 +1254,43 @@
     });
   });
 </script>
+
+  <!-- CERTIFICATE POPUP -->
+
+<div id="certModal" class="modal">
+
+  <span class="close-modal" onclick="closeCert()">
+    &times;
+  </span>
+
+  <div class="modal-content">
+    <img id="certImage" src="">
+  </div>
+
+</div>
+
+
+  <script>
+
+function showCert(imagePath) {
+    document.getElementById("certImage").src = imagePath;
+    document.getElementById("certModal").style.display = "flex";
+}
+
+function closeCert() {
+    document.getElementById("certModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+
+    let modal = document.getElementById("certModal");
+
+    if (event.target == modal) {
+        closeCert();
+    }
+
+}
+
+  </script>
 </body>
 </html>
